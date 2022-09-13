@@ -1,0 +1,19 @@
+.list {
+  margin-top: 10px;
+  padding: 10px;
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+}
+
+li {
+  margin-top: 5px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.loading {
+  font-size: 15px;
+  font-weight: 400;
+  margin-top: 5px;
+}
