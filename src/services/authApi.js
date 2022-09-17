@@ -4,10 +4,14 @@ const instance = axios.create({
   baseURL: 'https://connections-api.herokuapp.com',
 });
 
-const signup = async data => {
+export const signup = async data => {
   console.log(data);
   const { data: result } = await instance.post('/users/signup', data);
   return result;
 };
 
-export default signup;
+export const login = async data => {
+  console.log(data);
+  const { data: result } = await instance.post('/users/login', data);
+  return result;
+};

@@ -3,6 +3,7 @@ import { useDispatch, useSelector } from 'react-redux';
 import { signupOperations } from 'redux/auth/auth-operations';
 import { getAuthError, isAuth } from 'redux/auth/auth-selectors';
 import { Navigate } from 'react-router-dom';
+import style from '../RegisterPage/RegisterPage.module.css';
 
 const RegisterPage = () => {
   const dispatch = useDispatch();
@@ -18,10 +19,10 @@ const RegisterPage = () => {
     return <Navigate to="/contacts" />;
   }
   return (
-    <div>
-      <h1>Register page</h1>
+    <div className={style.pageWrapper}>
+      <h1 className={style.title}>Register page</h1>
       <RegisterForm onSubmit={onRegister} />
-      <p>{message}</p>
+      <p className={style.errorMessage}>{message}</p>
     </div>
   );
 };
