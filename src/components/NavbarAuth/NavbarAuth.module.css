@@ -1,0 +1,12 @@
+.navbarAuth {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 15px;
+  margin-right: 25px;
+}
+
+.navbarAuthLink {
+  color: black;
+  text-decoration: none;
+  margin-left: 15px;
+}
