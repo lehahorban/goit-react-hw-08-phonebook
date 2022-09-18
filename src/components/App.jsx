@@ -1,5 +1,5 @@
 import UserRoutes from 'UserRoutes';
-import NavbarMenu from './NavbarAuth/NavbarMenu/NavbarMenu';
+import NavbarMenu from './Navbar/NavbarMenu/NavbarMenu';
 
 function App() {
   return (

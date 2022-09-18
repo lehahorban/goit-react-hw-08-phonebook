@@ -1,0 +1,21 @@
+.navbarMenu {
+  display: flex;
+  justify-content: space-between;
+}
+
+.homeLink {
+  text-decoration: none;
+  color: black;
+  margin-left: 25px;
+  margin-top: 15px;
+}
+
+.wrappMenu {
+  display: flex;
+}
+
+.navbarAuthLink {
+  color: black;
+  text-decoration: none;
+  margin-top: 15px;
+}
