@@ -76,7 +76,8 @@ const authSlice = createSlice({
     [currentOperations.rejected]: (store, { payload }) => {
       store.loading = false;
       store.token = '';
-      store.error = payload;
+      store.error = null;
+      // store.error = payload;
     },
   },
 });
