@@ -13,7 +13,6 @@ function App() {
     <div>
       <NavbarMenu />
       <UserRoutes />
-      {/* <Contacts /> */}
     </div>
   );
 }

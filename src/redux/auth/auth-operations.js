@@ -4,7 +4,6 @@ import { signup, login, logout, getCurrent } from 'services/authApi';
 export const signupOperations = createAsyncThunk(
   'auth/signup',
   async (data, { rejectWithValue }) => {
-    console.log(data);
     try {
       const result = await signup(data);
       return result;
@@ -21,7 +20,6 @@ export const signupOperations = createAsyncThunk(
 export const loginOperations = createAsyncThunk(
   'auth/login',
   async (data, { rejectWithValue }) => {
-    console.log(data);
     try {
       const result = await login(data);
       return result;
@@ -56,7 +54,7 @@ export const currentOperations = createAsyncThunk(
   async (_, { rejectWithValue, getState }) => {
     try {
       const { auth } = getState();
-      console.log(auth.token);
+
       const result = await getCurrent(auth.token);
       return result;
     } catch ({ status, message }) {

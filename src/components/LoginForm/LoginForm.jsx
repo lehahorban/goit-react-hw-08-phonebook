@@ -25,7 +25,6 @@ const LoginForm = ({ onSubmit }) => {
   };
   return (
     <form onSubmit={hendleSubmit} className={style.registerForm}>
-      {/* <label>Email</label> */}
       <input
         className={style.inputForm}
         type="email"
@@ -36,7 +35,6 @@ const LoginForm = ({ onSubmit }) => {
         placeholder="Email"
       />
 
-      {/* <label>Password</label> */}
       <input
         className={style.inputForm}
         type="password"

@@ -1,4 +1,3 @@
-// import { initialState } from './initialState';
 import style from './RegisterForm.module.css';
 import { useState } from 'react';
 
@@ -31,7 +30,6 @@ const RegisterForm = ({ onSubmit }) => {
   };
   return (
     <form onSubmit={hendleSubmit} className={style.registerForm}>
-      {/* {name && <label>Name</label>} */}
       <input
         className={style.inputForm}
         type="text"
@@ -42,7 +40,6 @@ const RegisterForm = ({ onSubmit }) => {
         placeholder="Name"
       />
 
-      {/* {email && <label>Email</label>} */}
       <input
         className={style.inputForm}
         type="email"
@@ -53,7 +50,6 @@ const RegisterForm = ({ onSubmit }) => {
         placeholder="Email"
       />
 
-      {/* {password && <label>Password</label>} */}
       <input
         className={style.inputForm}
         type="password"
