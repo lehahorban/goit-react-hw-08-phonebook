@@ -3,23 +3,23 @@ import LoginForm from 'components/LoginForm/LoginForm';
 import { useDispatch, useSelector } from 'react-redux';
 import { loginOperations } from 'redux/auth/auth-operations';
 import { getAuthError } from 'redux/auth/auth-selectors';
-import { Navigate } from 'react-router-dom';
-import useAuth from 'hooks/useAuth';
+// import { Navigate } from 'react-router-dom';
+// import useAuth from 'hooks/useAuth';
 
 const LoginPage = () => {
   const dispatch = useDispatch();
   const { message } = useSelector(getAuthError);
-  const isLogin = useAuth();
+  // const isLogin = useAuth();
 
   const onLogin = data => {
     console.log(data);
     dispatch(loginOperations(data));
   };
-  console.log(isLogin);
+  // console.log(isLogin);
 
-  if (isLogin) {
-    return <Navigate to="/contacts" />;
-  }
+  // if (isLogin) {
+  //   return <Navigate to="/contacts" />;
+  // }
 
   return (
     <div className={style.pageWrapper}>

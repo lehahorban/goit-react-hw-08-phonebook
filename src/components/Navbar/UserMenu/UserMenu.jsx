@@ -1,14 +1,17 @@
 // import { NavLink } from 'react-router-dom';
 import style from './UserMenu.module.css';
-import { useSelector } from 'react-redux';
+import { useSelector, useDispatch } from 'react-redux';
 import { getUser } from 'redux/auth/auth-selectors';
+import { logoutOperations } from 'redux/auth/auth-operations';
 
 const UserMenu = () => {
   const { name } = useSelector(getUser);
+  const dispatch = useDispatch();
+  const onLogout = () => dispatch(logoutOperations());
   return (
     <div className={style.wrappUser}>
       <p>{name}</p>
-      <button className={style.btn} type="button">
+      <button onClick={onLogout} className={style.btn} type="button">
         Logout
       </button>
     </div>
