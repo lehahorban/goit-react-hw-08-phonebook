@@ -31,34 +31,40 @@ const RegisterForm = ({ onSubmit }) => {
   };
   return (
     <form onSubmit={hendleSubmit} className={style.registerForm}>
-      <label>Name</label>
+      {/* {name && <label>Name</label>} */}
       <input
+        className={style.inputForm}
         type="text"
         name="name"
         required
         onChange={onChange}
         value={name}
+        placeholder="Name"
       />
 
-      <label>Email</label>
+      {/* {email && <label>Email</label>} */}
       <input
+        className={style.inputForm}
         type="email"
         name="email"
         required
         onChange={onChange}
         value={email}
+        placeholder="Email"
       />
 
-      <label>Password</label>
+      {/* {password && <label>Password</label>} */}
       <input
+        className={style.inputForm}
         type="password"
         name="password"
         required
         onChange={onChange}
         value={password}
+        placeholder="Password"
       />
       <button className={style.btn} type="submit">
-        Registration
+        SIGN UP
       </button>
     </form>
   );

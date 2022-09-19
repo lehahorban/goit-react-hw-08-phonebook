@@ -10,7 +10,10 @@ const UserMenu = () => {
   const onLogout = () => dispatch(logoutOperations());
   return (
     <div className={style.wrappUser}>
-      <p>{name}</p>
+      <p className={style.name}>
+        Welcome, <span className={style.titleName}>{name}</span>!
+      </p>
+
       <button onClick={onLogout} className={style.btn} type="button">
         Logout
       </button>

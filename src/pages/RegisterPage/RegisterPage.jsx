@@ -21,7 +21,7 @@ const RegisterPage = () => {
   // }
   return (
     <div className={style.pageWrapper}>
-      <h1 className={style.title}>Register page</h1>
+      <h1 className={style.title}>Sign Up</h1>
       <RegisterForm onSubmit={onRegister} />
       <p className={style.errorMessage}>{message}</p>
     </div>

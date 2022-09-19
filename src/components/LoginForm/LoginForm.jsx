@@ -25,25 +25,29 @@ const LoginForm = ({ onSubmit }) => {
   };
   return (
     <form onSubmit={hendleSubmit} className={style.registerForm}>
-      <label>Email</label>
+      {/* <label>Email</label> */}
       <input
+        className={style.inputForm}
         type="email"
         name="email"
         required
         onChange={onChange}
         value={email}
+        placeholder="Email"
       />
 
-      <label>Password</label>
+      {/* <label>Password</label> */}
       <input
+        className={style.inputForm}
         type="password"
         name="password"
         required
         onChange={onChange}
         value={password}
+        placeholder="Password"
       />
       <button className={style.btn} type="submit">
-        Registration
+        LOG IN
       </button>
     </form>
   );

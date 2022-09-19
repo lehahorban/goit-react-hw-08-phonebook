@@ -23,7 +23,7 @@ const LoginPage = () => {
 
   return (
     <div className={style.pageWrapper}>
-      <h2 className={style.title}>Login page</h2>
+      <h1 className={style.title}>Log In</h1>
       <LoginForm onSubmit={onLogin} />
       <p className={style.errorMessage}>{message}</p>
     </div>

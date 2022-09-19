@@ -1,13 +1,31 @@
 .navbarMenu {
+  margin: auto;
   display: flex;
   justify-content: space-between;
+  padding-bottom: 10px;
+  border-top: none;
+  border-bottom: 4px solid;
+  border-image: linear-gradient(
+    0.25turn,
+    rgba(255, 249, 34),
+    rgba(255, 0, 128),
+    rgba(56, 2, 155, 0)
+  );
+  border-image-slice: 1;
+  width: 85%;
 }
 
 .homeLink {
   text-decoration: none;
-  color: black;
-  margin-left: 25px;
+  color: #2d3e4f;
+  /* margin-left: 25px; */
+  text-decoration: none;
   margin-top: 15px;
+  font-family: 'Oswald';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 25px;
+  line-height: 30 / 25;
 }
 
 .wrappMenu {
@@ -15,7 +33,36 @@
 }
 
 .navbarAuthLink {
-  color: black;
+  color: #2d3e4f;
   text-decoration: none;
   margin-top: 15px;
+  font-family: 'Oswald';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 25px;
+  line-height: 30 / 25;
+}
+
+.navbarAuthLink:last-child {
+  margin-left: 30px;
+}
+
+.homeLink:hover {
+  animation-name: puls;
+  animation-duration: 3s;
+}
+
+.navbarAuthLink:hover {
+  animation-name: puls;
+  animation-duration: 3s;
+}
+
+@keyframes puls {
+  0% {
+    transform: scale(1.1);
+  }
+
+  100% {
+    transform: scale(1);
+  }
 }

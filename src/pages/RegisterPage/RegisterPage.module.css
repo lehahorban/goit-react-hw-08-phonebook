@@ -1,12 +1,29 @@
 .pageWrapper {
-  margin-top: 30px;
+  margin-top: 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .title {
-  margin-left: 25px;
+  color: #2d3e4f;
+  animation-name: slidein;
+  animation-duration: 2s;
+  opacity: 1;
 }
 
 .errorMessage {
   margin-top: 30px;
   margin-left: 25px;
+}
+
+@keyframes slidein {
+  from {
+    margin-left: -50%;
+  }
+
+  to {
+    margin-left: 0%;
+  }
 }

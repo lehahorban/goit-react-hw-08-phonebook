@@ -2,11 +2,33 @@
   display: flex;
   justify-content: flex-end;
   margin-top: 15px;
-  margin-right: 25px;
+  /* margin-right: 25px; */
 }
 
 .navbarAuthLink {
-  color: black;
+  color: #2d3e4f;
   text-decoration: none;
   margin-left: 15px;
+  text-decoration: none;
+  font-family: 'Oswald';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 25px;
+  line-height: 30 / 25;
+}
+
+.navbarAuthLink:hover {
+  color: #df1484;
+  animation-name: puls;
+  animation-duration: 3s;
+}
+
+@keyframes puls {
+  0% {
+    transform: scale(1.1);
+  }
+
+  100% {
+    transform: scale(1);
+  }
 }

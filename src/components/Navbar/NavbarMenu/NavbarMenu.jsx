@@ -8,14 +8,16 @@ const NavbarMenu = () => {
   const isLogin = useAuth();
   return (
     <div className={style.navbarMenu}>
-      <NavLink className={style.homeLink} to="/">
-        Home
-      </NavLink>
-      {isLogin && (
-        <NavLink className={style.navbarAuthLink} to="/contacts">
-          Contacts
+      <div className={style.wrappMenu}>
+        <NavLink className={style.homeLink} to="/">
+          Home
         </NavLink>
-      )}
+        {isLogin && (
+          <NavLink className={style.navbarAuthLink} to="/contacts">
+            Contacts
+          </NavLink>
+        )}
+      </div>
       {isLogin ? <UserMenu /> : <NavbarAuth />}
     </div>
   );

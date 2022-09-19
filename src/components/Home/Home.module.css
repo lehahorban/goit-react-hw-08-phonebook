@@ -1,4 +1,62 @@
 .home {
-  margin-left: 25px;
   margin-top: 15px;
 }
+
+.title {
+  color: #2d3e4f;
+  margin-top: 50px;
+  text-align: center;
+  animation-name: slidein;
+  animation-duration: 3s;
+  opacity: 1;
+}
+
+/* .title {
+  animation-name: puls;
+  animation-duration: 3s;
+} */
+
+@keyframes slidein {
+  from {
+    margin-left: -50%;
+  }
+
+  to {
+    margin-left: 0%;
+  }
+
+  0% {
+    transform: scale(1.2);
+  }
+
+  100% {
+    transform: scale(1);
+  }
+  0% {
+    transform: rotateX(360deg);
+  }
+
+  100% {
+    transform: rotate(0deg);
+  }
+}
+
+img {
+  display: block;
+  width: 100%;
+  max-width: 100%;
+}
+
+.img {
+  margin-top: 10px;
+}
+
+/* @keyframes puls {
+  0% {
+    transform: scale(1.1);
+  }
+
+  100% {
+    transform: scale(1);
+  }
+} */

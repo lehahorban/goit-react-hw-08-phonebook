@@ -6,4 +6,46 @@
 
 .btn {
   margin-left: 10px;
+  width: 80px;
+  background-color: #cf404d;
+  border: 2px solid #cf404d;
+  border-radius: 4px;
+  font-family: 'Oswald';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 25 / 20;
+  text-align: center;
+  color: #ffffff;
+}
+
+.btn:hover {
+  animation-name: puls;
+  animation-duration: 3s;
+}
+
+.name {
+  font-family: 'Oswald';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 25px;
+  line-height: 30 / 25;
+}
+
+.titleName {
+  font-family: 'Oswald';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 25px;
+  line-height: 30 / 25;
+}
+
+@keyframes puls {
+  0% {
+    transform: scale(1.1);
+  }
+
+  100% {
+    transform: scale(1);
+  }
 }
