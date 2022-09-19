@@ -70,7 +70,7 @@ const authSlice = createSlice({
     [currentOperations.fulfilled]: (store, { payload }) => {
       store.loading = false;
       store.user = payload;
-      store.token = payload.token;
+      // store.token = payload.token;
       store.isLogin = true;
     },
     [currentOperations.rejected]: (store, { payload }) => {
