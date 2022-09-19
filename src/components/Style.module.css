@@ -1,5 +1,10 @@
-body {
-  background: linear-gradient(90deg, #cfecd0, #a0cea7, #9ec0db);
+/* body {
+  background: linear-gradient(4deg, #5462c3, #ba872c);
+} */
+
+footer {
+  background: linear-gradient(4deg, #5462c3, #ba872c);
+  height: 200px;
 }
 
 .app {
@@ -11,6 +16,11 @@ body {
   background-color: aliceblue;
   -webkit-box-shadow: 5px 5px 15px 5px #000000;
   box-shadow: 5px 5px 15px 5px #000000;
+}
+
+.container {
+  background: linear-gradient(90deg, #cfecd0, #a0cea7, #9ec0db);
+  height: auto;
 }
 
 p {
@@ -41,6 +51,34 @@ li {
 
 input {
   outline: none;
+}
+
+@keyframes puls {
+  0% {
+    transform: scale(1.1);
+  }
+
+  100% {
+    transform: scale(1);
+  }
+}
+
+.wrapp {
+  height: 430px;
+}
+
+.image {
+  margin: auto;
+  padding-top: 40px;
+  width: 60px;
+  height: 60px;
+}
+
+.image {
+  animation-name: puls;
+  animation-name: puls;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
 }
 
 @keyframes puls {
