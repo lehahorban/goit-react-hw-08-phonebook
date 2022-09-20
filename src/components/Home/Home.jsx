@@ -1,5 +1,5 @@
 import style from './Home.module.css';
-import contactImage from './img/markus-winkler-4TBdESUNuFg-unsplash.jpg';
+import contactImage from './img/contacts.png';
 
 const Home = () => {
   return (
