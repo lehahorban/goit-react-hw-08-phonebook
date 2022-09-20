@@ -17,3 +17,24 @@ li {
   font-weight: 400;
   margin-top: 5px;
 }
+
+.telLink {
+  text-decoration: none;
+  color: #404acf;
+}
+
+.telLink:hover {
+  display: flex;
+  color: #cf404d;
+}
+
+.image {
+  width: 14px;
+  height: 16px;
+  display: inline-block;
+  padding-right: 5px;
+}
+
+/* .imageWrapp {
+  display: flex;
+} */

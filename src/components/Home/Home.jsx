@@ -1,5 +1,5 @@
 import style from './Home.module.css';
-import contactImage from './img/contacts.png';
+import contactImage from './img/pngwing.com.png';
 
 const Home = () => {
   return (

@@ -11,6 +11,7 @@ footer {
   width: 330px;
   margin: auto;
   margin-top: 50px;
+  margin-bottom: 30px;
   padding: 10px;
   border: 1px solid #070f4b;
   background-color: aliceblue;
@@ -63,9 +64,9 @@ input {
   }
 }
 
-.wrapp {
+/* .wrapp {
   height: 430px;
-}
+} */
 
 .image {
   margin: auto;

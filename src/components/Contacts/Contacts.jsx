@@ -44,13 +44,11 @@ const Contacts = () => {
   };
 
   return (
-    <div className={style.wrapp}>
-      <div className={style.app}>
-        <p>Phonebook</p>
-        <ContactForm onAddContact={onAddContact} />
-        <Filter filter={filter} onChange={onFilterContact} />
-        <ContactList contacts={contacts} deleteUser={onRemoveContact} />
-      </div>
+    <div className={style.app}>
+      <p>Phonebook</p>
+      <ContactForm onAddContact={onAddContact} />
+      <Filter filter={filter} onChange={onFilterContact} />
+      <ContactList contacts={contacts} deleteUser={onRemoveContact} />
     </div>
   );
 };
