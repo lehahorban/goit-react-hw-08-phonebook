@@ -10,6 +10,7 @@ import {
   getFilter,
   getFilterContacts,
 } from '../../redux/filter/filter-selectors';
+import { toast } from 'react-toastify';
 
 const Contacts = () => {
   const contacts = useSelector(getFilterContacts);
@@ -28,7 +29,7 @@ const Contacts = () => {
       contact => contact.name.toLowerCase() === name.toLowerCase()
     );
     if (contact) {
-      alert(`Contact ${name} already exists`);
+      toast(`Contact ${name} already exists`);
       return;
     }
 

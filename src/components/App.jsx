@@ -5,6 +5,8 @@ import { useDispatch } from 'react-redux';
 import { currentOperations } from 'redux/auth/auth-operations';
 import style from './Style.module.css';
 import image from './image.png';
+import { ToastContainer } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 function App() {
   const dispatch = useDispatch();
@@ -19,6 +21,7 @@ function App() {
         <footer>
           <img className={style.image} src={image} alt="contacts" />
         </footer>
+        <ToastContainer autoClose={4000} />
       </div>
     </>
   );

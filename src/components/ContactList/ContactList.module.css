@@ -35,6 +35,8 @@ li {
   padding-right: 5px;
 }
 
-/* .imageWrapp {
-  display: flex;
-} */
+.text {
+  margin-left: 10px;
+  font-size: 15px;
+  font-weight: 400;
+}

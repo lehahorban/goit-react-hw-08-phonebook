@@ -15,7 +15,7 @@
   width: 85%;
 }
 
-.homeLink {
+/* .homeLink {
   text-decoration: none;
   color: #2d3e4f;
   text-decoration: none;
@@ -25,7 +25,7 @@
   font-weight: 700;
   font-size: 25px;
   line-height: 30 / 25;
-}
+} */
 
 .wrappMenu {
   display: flex;
@@ -46,14 +46,19 @@
   margin-left: 30px;
 }
 
-.homeLink:hover {
+/* .homeLink:hover {
+  animation-name: puls;
+  animation-duration: 3s;
+} */
+
+.navbarAuthLink:hover {
+  color: #df1484;
   animation-name: puls;
   animation-duration: 3s;
 }
 
-.navbarAuthLink:hover {
-  animation-name: puls;
-  animation-duration: 3s;
+.navbarAuthLinkActive {
+  color: #cf404d;
 }
 
 @keyframes puls {

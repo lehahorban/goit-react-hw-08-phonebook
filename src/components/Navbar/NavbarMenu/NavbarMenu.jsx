@@ -6,14 +6,21 @@ import useAuth from 'hooks/useAuth';
 
 const NavbarMenu = () => {
   const isLogin = useAuth();
+  const getClassName = ({ isActive }) => {
+    const className = isActive
+      ? `${style.navbarAuthLink} ${style.navbarAuthLinkActive}`
+      : style.navbarAuthLink;
+    return className;
+  };
+
   return (
     <div className={style.navbarMenu}>
       <div className={style.wrappMenu}>
-        <NavLink className={style.homeLink} to="/">
+        <NavLink className={getClassName} to="/">
           Home
         </NavLink>
         {isLogin && (
-          <NavLink className={style.navbarAuthLink} to="/contacts">
+          <NavLink className={getClassName} to="/contacts">
             Contacts
           </NavLink>
         )}
