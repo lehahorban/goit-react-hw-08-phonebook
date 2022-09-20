@@ -38,7 +38,7 @@
   border: none;
 }
 .inputForm:focus {
-  border: 1px solid;
+  border: 3px solid;
   border-color: hsla(0, 80%, 50%, 0.425);
 }
 

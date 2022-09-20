@@ -1,5 +1,6 @@
 import { createAsyncThunk } from '@reduxjs/toolkit';
 import { signup, login, logout, getCurrent } from 'services/authApi';
+import { toast } from 'react-toastify';
 
 export const signupOperations = createAsyncThunk(
   'auth/signup',
@@ -12,6 +13,7 @@ export const signupOperations = createAsyncThunk(
         status,
         message,
       };
+      toast.error('Enter correct information');
       return rejectWithValue(error);
     }
   }
@@ -28,6 +30,7 @@ export const loginOperations = createAsyncThunk(
         status,
         message,
       };
+      toast.error('Wrong email or password');
       return rejectWithValue(error);
     }
   }
