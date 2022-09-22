@@ -6,7 +6,6 @@ import image from './img/pngwing.com (6).png';
 
 function ContactList({ contacts, deleteUser }) {
   const isLoading = useSelector(store => store.contacts.loading);
-  console.log(contacts.length);
 
   return (
     <div>

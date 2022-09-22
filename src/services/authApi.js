@@ -12,14 +12,12 @@ const setToken = token => {
 };
 
 export const signup = async data => {
-  console.log(data);
   const { data: result } = await instance.post('/users/signup', data);
   setToken(result.token);
   return result;
 };
 
 export const login = async data => {
-  console.log(data);
   const { data: result } = await instance.post('/users/login', data);
   setToken(result.token);
   return result;
